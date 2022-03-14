@@ -18,29 +18,31 @@
 
     <EditText
         android:id="@+id/editTextUrl"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="289dp"
+        android:layout_height="65dp"
         android:layout_marginStart="110dp"
         android:layout_marginTop="79dp"
         android:ems="10"
         android:hint="@string/mact_hint_url"
-        android:inputType="none"
+        android:importantForAutofill="no"
+        android:inputType="textUri"
+        android:textColorHint="#757575"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:importantForAutofill="no"/>
+        app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
         android:id="@+id/editTextPhone"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="278dp"
+        android:layout_height="78dp"
         android:layout_marginStart="110dp"
         android:layout_marginTop="357dp"
+        android:autofillHints="phone"
         android:ems="10"
         android:hint="@string/mact_hint_phone"
         android:inputType="phone"
+        android:textColorHint="#757575"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:autofillHints="phone"/>
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/lbl_phone"
@@ -58,6 +60,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="158dp"
         android:layout_marginTop="181dp"
+        android:onClick="openBrowser"
         android:text="@string/mact_btn_launch"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -68,6 +71,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="153dp"
         android:layout_marginTop="462dp"
+        android:onClick="openDialer"
         android:text="@string/mact_btn_ring"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -78,6 +82,7 @@
         android:layout_height="48dp"
         android:layout_marginStart="103dp"
         android:layout_marginTop="614dp"
+        android:onClick="closeApp"
         android:text="@string/mact_btn_close"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
